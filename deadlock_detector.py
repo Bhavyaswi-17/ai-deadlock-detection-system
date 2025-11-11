@@ -68,6 +68,7 @@ class DeadlockDetection():
             print("Deadlocked processes:", ", ".join([f"P{i+1}" for i in deadlocked_processes]))
             # Draw Resource Allocation Graph with deadlock highlighted
             RagVisualizer(processes,resources,allocation_matrix,max_matrix,available,deadlocked_processes).visualize()
-# Run the program
+# Run the progrom
 if __name__ == "__main__":
     DeadlockDetection().main()
+
